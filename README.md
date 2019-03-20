@@ -101,8 +101,8 @@ import visuals as vs
 ### Target Variable
 - **income**: Income Class (<=50K, >50K)
 
-![explore data1]()
-![explore data2]()
+![explore data1](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/1.png)
+![explore data2](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/2.png)
 
 # Preparing the Data
 
@@ -111,7 +111,7 @@ import visuals as vs
 skewed_feature.apply(lambda x: np.log(x + 1))
 ```
 
-![log transform]()
+![log transform](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/3.png)
 
 - **Normalise** numerical variables by [`sklearn.preprocessing.MinMaxScaler`](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html):
 ```
@@ -245,7 +245,7 @@ for clf in clfs:
 
 ```
 
-![models]()
+![models](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/4.png)
 
 
 - I also used **TPOT** result as a reference.
@@ -272,7 +272,7 @@ True
 # Improving Results
 I chose the ***best*** model and performed **a grid search optimization** for it over the entire training set (`X_train` and `y_train`) by tuning parameters to improve upon the untuned model's F-score.
 
-## Best model:
+## Best model
 
 
 ### **F-score ** on the testing (100% training data)
@@ -343,7 +343,7 @@ acc_after = accuracy_score(y_test, best_predictions)
 f_after = fbeta_score(y_test, best_predictions, beta = 0.5)
 ```
 
-![model tuning results]()
+![model tuning results](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/5.png)
 
 # Feature Selection
 
@@ -366,7 +366,7 @@ importances = model.feature_importances_
 vs.feature_plot(importances, X_train, y_train)
 ```
 
-![top 5 features]()
+![top 5 features](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/6.png)
 
 ## Reduce Feature Space
 
@@ -397,4 +397,4 @@ f_reduced = fbeta_score(y_test, reduced_predictions, beta = 0.5)
 
 ```
 
-![scores by reduced features]()
+![scores by reduced features](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/7.png)
