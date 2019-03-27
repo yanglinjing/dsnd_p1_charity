@@ -84,7 +84,7 @@ import visuals as vs
 # Exploring the Data
 
 ### Features
-1. **age**: continuous.
+* **age**: continuous.
 * **workclass**: Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay, Never-worked.
 * **education**: Bachelors, Some-college, 11th, HS-grad, Prof-school, Assoc-acdm, Assoc-voc, 9th, 7th-8th, 12th, Masters, 1st-4th, 10th, Doctorate, 5th-6th, Preschool.
 * **education-num**: continuous.
@@ -123,7 +123,7 @@ MinMaxScaler().fit_transform(numerical_feature)
 pd.get_dummies(features)
 ```
 
-- Slippt data into **training** and **testing** sets
+- Split data into **training** and **testing** sets
 ```
 X_train, X_test, y_train, y_test = train_test_split(features_final, income, test_size = 0.2, random_state = 0)
 ```
