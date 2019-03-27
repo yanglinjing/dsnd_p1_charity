@@ -105,6 +105,7 @@ import visuals as vs
 ![explore data2](https://github.com/yanglinjing/dsnd_p1_finding_donors_for_charity/blob/master/readme_img/2.png)
 
 # Preparing the Data
+(Note: Only some important codes are shown here. For all the codes, please see the `.ipynb` document)
 
 - Transform **skewed** continuous features with **outliers**: apply a <a href="https://en.wikipedia.org/wiki/Data_transformation_(statistics)">`logarithmic transformation`</a>
 ```
